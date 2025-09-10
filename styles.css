@@ -1,0 +1,54 @@
+/* Set the font for all paragraphs to Proxima Nova */
+p {
+  /* Use Proxima Nova, and fall back to Arial or sans-serif if not available */
+  font-family: 'Proxima Nova', Arial, sans-serif;
+}
+/* Set the background color for the body to a light blue */
+body {
+  background-color: #77ABBB; /* Sets a light blue background for the whole page */
+}
+/* ...existing code... */
+/* ...existing code... */
+  /* ...existing code... */
+
+    /* Container for story section to place text and image side by side */
+    .story-container {
+      /* Use simple float for layout (beginner-friendly) */
+      overflow: auto; /* Clear floats */
+    }
+
+    .story-text {
+      float: left;
+      width: 60%; /* Text takes up most of the space */
+      box-sizing: border-box;
+      padding-right: 20px;
+    }
+
+    .story-image {
+      float: right;
+      width: 220px; /* Medium size */
+      max-width: 40%;
+      height: auto;
+      border-radius: 8px; /* Rounded corners for style */
+      box-shadow: 0 2px 8px rgba(0,0,0,0.08); /* Soft shadow */
+    }
+
+    /* Make sure it looks good on small screens */
+    @media (max-width: 700px) {
+      .story-text, .story-image {
+        float: none;
+        width: 100%;
+        max-width: 100%;
+        padding-right: 5px;
+        display: block;
+        margin: 0 auto;
+        text-align: left;
+      }
+      .story-image {
+        margin-top: 60px;
+      }
+    }
+
+    /* ...existing code... */
+    /* ...existing code... */
+/* ...existing code... */
